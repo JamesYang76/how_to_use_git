@@ -62,7 +62,7 @@ Also, there are tracked and untracked files.
 untracted files can be tracked via `git add`. For example, a file which is newly made is untracked.\
 files in clone are tracked, but unmodified.
 
-##### git add
+##### git add files
 Make untracked files or modified files into staged status.
 ```bash
 $ git add .
@@ -76,14 +76,31 @@ $ git commit -m "First Commit"
 # add and commit togather
 $ git commit -am "First Commit"
 ```
+To change commit message,
+``` bash
+$ git commit --amend
+```
+To overwrite last commit,
+``` bash
+$ git commit -m 'last commit'
+$ git add forgotten_file
+$ git commit --amend
+```
+
 ##### git status
 ``` bash
 $ git status
 ```
+##### git mv old_filename new_filename
+To rename a file,
+``` bash
+$ git mv old_filename new_filename
+$ git commit -m "Rename file"
 
-##### git rm
+```
+##### git rm files
 To delete files or remove files from tracked status. 
-In case of deleting files,\
+In case of deleting files,
 ``` bash
 $ rm a.txt
 
@@ -99,3 +116,54 @@ In case of remove files from tracked status.
 ``` bash
 $ git rm --cached a.log
 ```
+
+### Git Branch
+
+##### git branch
+To show branch
+``` bash
+# local
+$ git branch
+# -a : all, -r : remote
+# git branch -a
+```
+
+##### git branch/checkout branch_name
+To make a new branch and go to the branch
+``` bash
+$ git branch testing
+$ git checkout testing
+```
+
+##### git checkout -b branch_name
+To make a new branch and go to the branch in one command
+``` bash
+$ git checkout -b testing
+```
+
+#### git push origin branch_name
+To apply branch to remote repository
+```bash
+$ git push origin testing
+```
+
+#### git branch -d branch_name
+``` bash
+$ git branch -d testing
+```
+
+#### git push origin :branch_name
+To remove remote branch
+``` bash
+$ git push origin :testing
+#another way
+$ git push origin -d testing
+```
+
+#### git branch -m old_name new_name
+To change branch name
+```bash
+$ git branch -m old_name new_name
+$ git push origin :old_name
+$ git push origin new_name
+``` 

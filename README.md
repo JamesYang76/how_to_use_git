@@ -38,7 +38,7 @@ go to repository and make `.gitignore` and\
 fill out the file via https://www.gitignore.io
 
 ## Usage
-####Git clone or init
+#### Git clone or init
 If there is a remote repository,
 ```bash
 # ssh
@@ -54,7 +54,7 @@ $ git init
 There will be `.git` directory which was made.
 
 
-####Git status
+### Git status
 If there is a new file or modified file, the status is unstaged,\
 via `git add`, the file can become staged.\
 After the file in staged, it'll be committed through `git commit`\
@@ -62,26 +62,26 @@ Also, there are tracked and untracked files.
 untracted files can be tracked via `git add`. For example, a file which is newly made is untracked.\
 files in clone are tracked, but unmodified.
 
-#####git add
+##### git add
 Make untracked files or modified files into staged status.
 ```bash
 $ git add .
 $ git add git-*.sh
 $ git add Documentation/\*.txt
 ```
-#####git commit
+##### git commit
 Make a version, in other word, make a index for files in only staged.
 ```bash
 $ git commit -m "First Commit"
 # add and commit togather
 $ git commit -am "First Commit"
 ```
-#####git status
+##### git status
 ``` bash
 $ git status
 ```
 
-####git rm
+##### git rm
 To delete files or remove files from tracked status. 
 In case of deleting files,\
 ``` bash

@@ -364,16 +364,16 @@ $ git push origin :refs/tags/v0.1
 #### git checkout tag_name
 
 ## Reference
-Git quick reference\
-https://education.github.com/git-cheat-sheet-education.pdf\
-https://git-scm.com/book/en/v2\
-https://guides.github.com/\
+Git quick reference
+- https://education.github.com/git-cheat-sheet-education.pdf
+- https://git-scm.com/book/en/v2
+- https://guides.github.com/
 
-For Sotfware Version\
-https://semver.org
+For Sotfware Version
+- https://semver.org
 
-Git Branch Strategy\
-http://nvie.com/posts/a-successful-git-branching-model/\
+Git Branch Strategy
+- http://nvie.com/posts/a-successful-git-branching-model
 
 
 

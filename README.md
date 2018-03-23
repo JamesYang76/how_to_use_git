@@ -190,6 +190,15 @@ To relove merge conflict, open conflicted files and fix them
 $ git add file_names
 $ git commit -m "resolve merge conflict"
 ```
+#### git rebase base_branch_name
+To base branch
+```bash
+$ git rebase base_branch_name
+# if there is conflict, resolve it
+$ git add conflicted_files
+$ git rebase --continue
+
+```
 
 
 ### show differnces
@@ -352,7 +361,19 @@ $ git tag -d v0.1
 #remote delete
 $ git push origin :refs/tags/v0.1
 ```
+#### git checkout tag_name
 
-## Refrence
+## Reference
+Git quick reference\
 https://education.github.com/git-cheat-sheet-education.pdf\
-https://git-scm.com/book/en/v2
+https://git-scm.com/book/en/v2\
+https://guides.github.com/\
+
+For Sotfware Version\
+https://semver.org
+
+Git Branch Strategy\
+http://nvie.com/posts/a-successful-git-branching-model/\
+
+
+

@@ -157,6 +157,14 @@ $ git checkout testing
 $ git checkout -b testing a9c146a09505837ec03b
 ```
 
+#### git checkout -b subbranch_of_b1 branch1
+To make an subbranch on branch
+``` bash
+$ git checkout -b dev
+$ git push origin dev 
+$ git checkout -b sub_dev dev
+```
+
 #### git push origin branch_name
 To apply branch to remote repository
 ```bash

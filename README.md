@@ -144,12 +144,17 @@ To make a new branch and go to the branch
 ``` bash
 $ git branch testing
 $ git checkout testing
+# make a new branch and go to the branch in one command
+$ git checkout -b testing
 ```
 
-##### git checkout -b branch_name
-To make a new branch and go to the branch in one command
+##### git branch branch_name commit_id
+To make a new branch on commit_id
 ``` bash
-$ git checkout -b testing
+$ git branch testing a9c146a09505837ec03b
+$ git checkout testing
+# one command
+$ git checkout -b testing a9c146a09505837ec03b
 ```
 
 #### git push origin branch_name

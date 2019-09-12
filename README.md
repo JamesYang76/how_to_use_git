@@ -284,7 +284,11 @@ $ git checkout HEAD --file_name
 #### git reset --hard HEAD
 To go back to lastest commit
 ``` bash
+# To go back to lastest commit
 $ git reset --hard HEAD
+
+# To go back to previous commit
+$ git reset --hard HEAD^
 ```
 #### git reset --hard ORIG_HEAD
 ORIG_HEAD is previous stage of HEAD

@@ -265,6 +265,7 @@ $ git stash clear
 #### git revert commited_id
 To go back to past, by making new commit
 ``` bash
+# go back to one step back from commited_id 
 $ git revert commited_id
 # go back 2 step back from last commit
 $ git revert HEAD^
